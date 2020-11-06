@@ -84,6 +84,21 @@ public class Trigonometric_Functions
 		return cos;
 	}
 	
+	/**
+	 * tan function for finding tan(x)
+	 * @param angle
+	 * @return returns generated value
+	 * @throws Factorial_Exception_Handler 
+	 * @throws Power_Exception_Handler 
+	 */
+	public static double tan(double angle) throws Power_Exception_Handler, Factorial_Exception_Handler
+	{
+		double tan=0;
+		
+		tan = sin(angle) / cos (angle);
+		
+		return tan;
+	}
 	
 	
 	/**
