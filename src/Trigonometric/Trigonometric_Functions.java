@@ -63,6 +63,27 @@ public class Trigonometric_Functions
 		return sin;
 	}
 	
+	/**
+	 * cos function for finding cos(x)
+	 * @param angle
+	 * @return returns generated value
+	 * @throws Factorial_Exception_Handler 
+	 * @throws Power_Exception_Handler 
+	 */
+	public static double cos(double angle) throws Power_Exception_Handler, Factorial_Exception_Handler
+	{
+		double cos=0;
+		double normAngle = norm_To_Radian(angle);
+				
+		for(int i=1;i<=11;i++)
+		{
+			cos = cos + (pow(-1, i-1)*
+					pow(normAngle, 2*(i-1))/factorial(2*(i-1)));
+		}
+		
+		return cos;
+	}
+	
 	
 	
 	/**
