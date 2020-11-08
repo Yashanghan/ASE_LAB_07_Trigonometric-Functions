@@ -19,4 +19,12 @@ public class Tests_Cos {
 		Assert.assertEquals(Math.cos(2), Trigonometric_Functions.cos(2), decimalpoints);
 	}
 	
+	@Test
+	public void testCos1_Negative() throws Power_Exception_Handler, Factorial_Exception_Handler
+	{
+		// this test is used for finding that the function will generate accurate value
+				// or not
+		Assert.assertEquals(Math.cos(20), Trigonometric_Functions.cos(2), decimalpoints);
+	}
+	
 }
