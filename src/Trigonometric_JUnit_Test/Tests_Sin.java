@@ -18,6 +18,6 @@ public class Tests_Sin {
 		Assert.assertEquals(Math.sin(2), Trigonometric_Functions.sin(2), decimalpoints);
 	}
 	
-	
+
 	
 }
