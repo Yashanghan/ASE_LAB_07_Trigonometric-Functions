@@ -19,4 +19,12 @@ public class Tests_Tan {
 		assertEquals(Math.tan(2), Trigonometric_Functions.tan(2), decimalpoints);
 	}
 
+	@Test
+	public void testTan1_Negative() throws Power_Exception_Handler, Factorial_Exception_Handler
+	{
+		// this test is used for finding that the function will generate accurate value
+				// or not
+		assertEquals(Math.tan(20), Trigonometric_Functions.tan(2), decimalpoints);
+	}
+	
 }
