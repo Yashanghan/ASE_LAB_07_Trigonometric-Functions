@@ -17,6 +17,11 @@ public class Tests_factTesting {
 		assertEquals(24, Trigonometric_Functions.factorial(4));
 	}
 	
-	
+	@Test
+	public void factTesting_2_Negative() throws Power_Exception_Handler, Factorial_Exception_Handler
+	{
+		// this test is used for finding that whether or not your function will generate accurate value.
+		assertEquals(24, Trigonometric_Functions.factorial(5));
+	}
 
 }
