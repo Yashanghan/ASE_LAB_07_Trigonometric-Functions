@@ -27,4 +27,10 @@ public class Tests_Tan {
 		assertEquals(Math.tan(20), Trigonometric_Functions.tan(2), decimalpoints);
 	}
 	
+	@Test
+	public void testTan2_Positive() throws Power_Exception_Handler, Factorial_Exception_Handler
+	{
+		// this test is used for finding value for Degree
+		assertEquals(1.7320, Trigonometric_Functions.tan(Trigonometric_Functions.degree_To_Radian(60)), decimalpoints);
+	}
 }
