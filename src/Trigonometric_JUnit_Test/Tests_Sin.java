@@ -32,4 +32,10 @@ public class Tests_Sin {
 		Assert.assertEquals(0.8660,Trigonometric_Functions.sin(Trigonometric_Functions.degree_To_Radian(60)), decimalpoints);
 	}
 	
+	@Test
+	public void testSin2_Negative() throws Power_Exception_Handler, Factorial_Exception_Handler
+	{
+		// this test is used for finding value for Degree
+		Assert.assertEquals(0.8660,Trigonometric_Functions.sin(Trigonometric_Functions.degree_To_Radian(6)), decimalpoints);
+	}
 }
