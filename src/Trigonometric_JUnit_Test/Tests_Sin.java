@@ -18,6 +18,18 @@ public class Tests_Sin {
 		Assert.assertEquals(Math.sin(2), Trigonometric_Functions.sin(2), decimalpoints);
 	}
 	
-
+	@Test
+		public void testSin1_Negative() throws Power_Exception_Handler, Factorial_Exception_Handler
+		{
+			// this test is used for finding that the function will generate accurate value
+			Assert.assertEquals(Math.sin(20), Trigonometric_Functions.sin(2), decimalpoints);
+		}
+		
+	@Test
+	public void testSin2_Positive() throws Power_Exception_Handler, Factorial_Exception_Handler
+	{
+		// this test is used for finding value for Degree
+		Assert.assertEquals(0.8660,Trigonometric_Functions.sin(Trigonometric_Functions.degree_To_Radian(60)), decimalpoints);
+	}
 	
 }
