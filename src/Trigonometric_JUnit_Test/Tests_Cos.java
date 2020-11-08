@@ -34,4 +34,11 @@ public class Tests_Cos {
 		Assert.assertEquals(0.5, Trigonometric_Functions.cos(Trigonometric_Functions.degree_To_Radian(60)), decimalpoints);
 	}
 	
+	@Test
+	public void testCos2_Negative() throws Power_Exception_Handler, Factorial_Exception_Handler
+	{
+		// this test is used for finding value for Degree
+		Assert.assertEquals(0.5, Trigonometric_Functions.cos(Trigonometric_Functions.degree_To_Radian(6)), decimalpoints);
+	}
+	
 }
