@@ -1,6 +1,6 @@
 package Trigonometric_JUnit_Test;
 
-import static org.junit.Assert.*;
+import org.junit.Assert;
 
 import org.junit.Test;
 
@@ -14,14 +14,14 @@ public class Tests_factTesting {
 	public void factTesting_1_Positive() throws Power_Exception_Handler, Factorial_Exception_Handler
 	{
 		// this test is used for finding that whether or not your function will generate accurate value.
-		assertEquals(24, Trigonometric_Functions.factorial(4));
+		Assert.assertEquals(24, Trigonometric_Functions.factorial(4));
 	}
 	
 	@Test
 	public void factTesting_2_Negative() throws Power_Exception_Handler, Factorial_Exception_Handler
 	{
 		// this test is used for finding that whether or not your function will generate accurate value.
-		assertEquals(24, Trigonometric_Functions.factorial(5));
+		Assert.assertNotEquals(24, Trigonometric_Functions.factorial(5));
 	}
 
 }
